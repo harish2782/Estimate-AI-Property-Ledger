@@ -1,0 +1,53 @@
+{
+  "best_model": "GradientBoosting(XGBoost-alt)",
+  "feature_columns": [
+    "area",
+    "bedrooms",
+    "bathrooms",
+    "stories",
+    "parking",
+    "age_years",
+    "amenities_score",
+    "location",
+    "furnishing"
+  ],
+  "categorical_columns": [
+    "location",
+    "furnishing"
+  ],
+  "numeric_columns": [
+    "area",
+    "bedrooms",
+    "bathrooms",
+    "stories",
+    "parking",
+    "age_years",
+    "amenities_score"
+  ],
+  "comparison": {
+    "LinearRegression": {
+      "MAE": 2319481.7010025945,
+      "MSE": 8953743594242.37,
+      "RMSE": 2992280.667691848,
+      "R2": 0.7443165487651545
+    },
+    "DecisionTreeRegressor": {
+      "MAE": 1376201.4673028826,
+      "MSE": 3729758963745.5317,
+      "RMSE": 1931258.3886537636,
+      "R2": 0.8934928575866538
+    },
+    "RandomForestRegressor": {
+      "MAE": 923673.1278864992,
+      "MSE": 1683416180940.8655,
+      "RMSE": 1297465.290842443,
+      "R2": 0.95192830189103
+    },
+    "GradientBoosting(XGBoost-alt)": {
+      "MAE": 729482.9797253028,
+      "MSE": 1113178078592.2612,
+      "RMSE": 1055072.546601541,
+      "R2": 0.9682120433785409
+    }
+  }
+}
